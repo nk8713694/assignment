@@ -1,12 +1,12 @@
 here how i will create this  project, we can follow these steps:
 
-Set up a Flask backend that can receive audio packets from the frontend via Socket.IO. You can use the Flask-SocketIO library to achieve this.
+Set up a Flask backend that can receive audio packets from the frontend via Socket.IO. we can use the Flask-SocketIO library to achieve this.
 
-Create a React frontend with a button to start recording audio. You can use a library like react-mic for capturing audio.
+Create a React frontend with a button to start recording audio. we can use a library like react-mic for capturing audio.
 
 Use Socket.IO to establish a connection between the frontend and the backend. Send the audio packets to the backend using Socket.IO.
 
-Use a speech-to-text API like Google Cloud Speech-to-Text to transcribe the audio. You can use the google-cloud-speech library to interact with the API.
+Use a speech-to-text API like Google Cloud Speech-to-Text to transcribe the audio. we can use the google-cloud-speech library to interact with the API.
 
 Use the Flask-SocketIO library to send the interim and final results back to the frontend.
 
@@ -14,7 +14,7 @@ Implement logic in the frontend to update the textfield with the interim and fin
 
 Use a library like VAD.js to detect voice activity in the audio stream and prevent sending data to the backend when there is no talking.
 
-Here are some resources that can help you get started with these steps:
+Here are some resources that can help we get started with these steps:
 
 Flask-SocketIO documentation: https://flask-socketio.readthedocs.io/en/latest/
 
