@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+here how i will create this  project, we can follow these steps:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Set up a Flask backend that can receive audio packets from the frontend via Socket.IO. You can use the Flask-SocketIO library to achieve this.
 
-## Available Scripts
+Create a React frontend with a button to start recording audio. You can use a library like react-mic for capturing audio.
 
-In the project directory, you can run:
+Use Socket.IO to establish a connection between the frontend and the backend. Send the audio packets to the backend using Socket.IO.
 
-### `npm start`
+Use a speech-to-text API like Google Cloud Speech-to-Text to transcribe the audio. You can use the google-cloud-speech library to interact with the API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Use the Flask-SocketIO library to send the interim and final results back to the frontend.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Implement logic in the frontend to update the textfield with the interim and final results as they are received.
 
-### `npm test`
+Use a library like VAD.js to detect voice activity in the audio stream and prevent sending data to the backend when there is no talking.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here are some resources that can help you get started with these steps:
 
-### `npm run build`
+Flask-SocketIO documentation: https://flask-socketio.readthedocs.io/en/latest/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React-mic library: https://www.npmjs.com/package/react-mic
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Socket.IO documentation: https://socket.io/docs/v4/index.html
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Google Cloud Speech-to-Text documentation: https://cloud.google.com/speech-to-text/docs
 
-### `npm run eject`
+google-cloud-speech library documentation: https://googleapis.dev/python/speech/latest/index.html
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+VAD.js library: https://github.com/caroaguilar/vad.js
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+in thss way we will be  able to build a functional audio streaming and transcription system that meets the current   acceptance criteria. 
